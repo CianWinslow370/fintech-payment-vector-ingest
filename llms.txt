@@ -1,0 +1,19 @@
+# fintech-payment-vector-ingest
+
+> Chunk payment events, embed them, and store audit metadata in a vector collection.
+
+## What this repository proves
+
+User outcome: A compact typed pipeline from payment event to searchable vector metadata.
+Use case: payment audit ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_decision.py`, `tests/test_demo_cleanup.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

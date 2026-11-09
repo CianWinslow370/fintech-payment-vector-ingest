@@ -1,0 +1,1 @@
+"""Payment ingest example package."""
